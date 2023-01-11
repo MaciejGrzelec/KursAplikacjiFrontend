@@ -1,6 +1,23 @@
-:host {
-    background: #ddd;
-    padding: 20px;
+@import '../../../../variables.scss';
 
+:host {
+    background: $darkgrey;
+    padding: 20px;
+    color: white;
 }
+
+.logo{
+    font-size: 22px;
+}
+
+.logoIcon{
+    font-size: 30px;
+    padding: 3px;
+}
+
+.shopping_basket{
+    font-size: 30px;
+    padding: 6px;
+}
+
 
