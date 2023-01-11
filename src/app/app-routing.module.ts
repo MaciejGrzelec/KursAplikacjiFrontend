@@ -1,3 +1,5 @@
+import { FullpageadminComponent } from './layouts/fullpageadmin/fullpageadmin.component';
+import { AdminComponent } from './modules/admin/admin.component';
 import { LoginComponent } from './modules/login/login.component';
 import { FullpageComponent } from './layouts/fullpage/fullpage.component';
 import { HomeComponent } from './modules/home/home.component';
@@ -16,6 +18,11 @@ const routes: Routes = [
   {
     path:'', component: FullpageComponent, children: [
       {path: 'login', component: LoginComponent}
+    ]
+  },
+  {
+    path:'', component: FullpageadminComponent, children: [
+      {path: 'admin', component: AdminComponent}
     ]
   }
 ];
